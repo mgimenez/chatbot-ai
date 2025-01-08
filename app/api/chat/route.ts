@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
 
-const systemPrompt = "You are a helpful AI assistant.";
+const systemPrompt = "You are a helpful guitar salesman.";
 
 const openai_hf = new OpenAI({
    baseURL: "https://api-inference.huggingface.co/v1/",

@@ -51,7 +51,7 @@ export default function Home() {
                     : 'bg-muted'
                 }`}
               >
-                {message.text}
+                <div dangerouslySetInnerHTML={{ __html: message.text.replace(/\n/g, '<br/>') }}></div>
               </div>
             </div>
           ))}
